@@ -1,0 +1,14 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.radio-color-label {
+    color: white;
+    margin-left: 1rem;
+}
+
+.span-footer-position {
+    justify-items: end;
+}
