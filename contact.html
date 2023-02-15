@@ -46,43 +46,26 @@
             </button>
         </div>
 
-        <nav class="navbar bg-body-tertiary" data-bs-theme="dark">
-            <div class="container-fluid">
-
-                <div>
-                    <label for="category1"><input type="radio" name="category" id="category1"    value="category">Category1</label>
-                    <label for="category2"><input type="radio" name="category" id="category2" value="category">Category2</label>
-                    <label for="category3"><input type="radio" name="category" id="category3" value="category">Category3</label>
-                    <label for="category4"><input type="radio" name="category" id="category4" value="category">Category4</label>
-                    <label for="category5"><input type="radio" name="category" id="category5" value="category">Category5</label>
-                </div>
-                        
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-info" type="submit">Search</button>
-                </form>
-
-            </div>
-        </nav>
-
     </header>
 
-    <main>
+    <main class="d-flex justify-content-center align-items-center">
 
-        <form class="form-contact">
+        <form class="form-contact m-5 col-sm-5 ">
             <div class="mb-3">
                 <label for="formGroupExampleInput" class="form-label">Name:</label>
                 <input type="text" class="form-control" id="formGroupExampleInput">
-              </div>
+            </div>
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email address:</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <label for="exampleInputEmail1" class="form-label">Email address:</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label">Message:</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
-                <button type="submit" class="btn btn-primary">Send</button>
+            <div class="d-md-flex justify-content-md-end">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
         </form>
 
     </main>

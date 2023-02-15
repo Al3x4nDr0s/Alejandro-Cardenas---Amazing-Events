@@ -9,6 +9,10 @@
     margin-left: 1rem;
 }
 
-.span-footer-position {
+/* .span-footer-position {
     justify-items: end;
+} */
+
+.card-footer {
+    justify-content: space-around;
 }
