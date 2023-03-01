@@ -6,4 +6,5 @@ const past = jsonData.events.filter(element => {
     };
 });
 
+categories(jsonData);
 renderCard(past);

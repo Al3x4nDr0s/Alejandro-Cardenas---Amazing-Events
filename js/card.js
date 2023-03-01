@@ -1,5 +1,5 @@
 const renderCard = function(data){
-    let card = document.getElementById('container');
+    const card = document.getElementById('container');
     let cardTemplate = "";
 
     data.forEach(element => {
