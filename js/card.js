@@ -23,24 +23,3 @@ const renderCard = (data) => {
     card.innerHTML = cardTemplate;
 };
 
-const searchBar = () => {
-    const search = document.getElementById('searchBar');
-    console.log(search)
-    search.addEventListener('Key', (e) => {
-        console.log(e)
-    });
-}
-
-
-
-
-const eventCard = function(){
-   const button = document.getElementById("button");
-   console.log("boton",  button)
-   button.addEventListener('click', (e)=>{
-      e.preventDefault()
-      console.log(e.target)
-      let detail = document.querySelector('h5')
-      console.log(detail.innerHTML)   
-   });
-};

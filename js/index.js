@@ -1,5 +1,5 @@
 const data = jsonData.events;
 
-categories(jsonData);
+categories(data);
 renderCard(data);
-searchBar()
+searchBar(data)
