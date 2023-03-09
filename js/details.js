@@ -1,10 +1,7 @@
-const data1 = jsonData.events;
+const dataEvents = jsonData.events;
 
-let id = new URLSearchParams(location.search).get("id")
-console.log(id)
-const cardDetail = data1.find(elemento => elemento._id == id)
-console.log(cardDetail)
-
+let id = new URLSearchParams(location.search).get("id");
+const cardDetail = dataEvents.find(elemento => elemento._id == id);
 const card = document.getElementById('containerDetail');
 
 let detailTemplate =`<div class="card" style="width: 40rem;">
@@ -23,5 +20,5 @@ let detailTemplate =`<div class="card" style="width: 40rem;">
                 </ul>
             </div>`
 
-card.innerHTML = detailTemplate;   
+card.innerHTML = detailTemplate; 
 

@@ -36,3 +36,26 @@ const responseChecks = (select, dataCategory) => {
 const filterAll = (data) => {
     const filterAllCards = searchBar(data, checkBoxFilter(data));
 };
+
+/*--------------------- Alert ---------------------*/
+
+const alert = () => {
+
+    const modalTemplate = `<div class="modal" tabindex="-1">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title">Evento no encontrado</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                    <p>El evento que está buscando no se encuentra disponible. Verifique que este bien escrito y trate de nuevo.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>`
+
+};
