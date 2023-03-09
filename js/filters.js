@@ -27,7 +27,7 @@ const checkBoxFilter = (data) => {
 };
 
 const responseChecks = (select, dataCategory) => {
-    return select.length === 0 ? dataCategory : dataCategory.filter(e => select.includes(e.category));
+    return select.length === 0 ? dataCategory : dataCategory.filter(e => select.includes(e.category.replace(" ", "-")));
 };
 
 /*-------------------- Cross Filters ------------------*/

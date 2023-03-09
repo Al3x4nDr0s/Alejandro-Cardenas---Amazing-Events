@@ -14,11 +14,11 @@ const renderCard = (data) => {
                             </div>
                     <div class="card-footer d-grid gap-2 d-md-flex justify-content-between">
                     <span>Price $${element.price}</span>
-                    <a href="./details.html?id=${data._id}" class="btn btn-primary" id="button">Go to detail</a>
+                    <a href="./details.html?id=${element._id}" class="btn btn-primary" id="button">Go to detail</a>
                 </div>
             </div>`;
                      
-    }).join('');
+    });
 
     card.innerHTML = cardTemplate;
 };

@@ -4,3 +4,4 @@ categories(data);
 renderCard(data);
 searchBar(data);
 filterAll(data);
+

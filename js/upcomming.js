@@ -9,5 +9,4 @@ const upcomming = jsonData.events.filter(element => {
 categories(jsonData.events);
 renderCard(upcomming);
 searchBar(upcomming);
-// checkBoxFilter(upcomming);
 filterAll(upcomming);
