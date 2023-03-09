@@ -15,3 +15,4 @@ const searchResponse = (search, data) => {
     // console.log(response);
     return renderCard(response);
 };
+
