@@ -40,4 +40,3 @@ async function dataEventsPrueba() {
 dataEventsPrueba()
 
 
-gi
