@@ -76,7 +76,7 @@ const statsEvents = async() => {
     let attendanceUpcommingCategory = [];
 
     for(let i=0; i<upcommingAttendance.length; i++){
-        attendanceUpcommingCategory.push((upcommingAttendance[i]/upcommingCapacity[i])*100)
+        (upcommingCapacity[i] < 1)? attendanceUpcommingCategory.push(0):attendanceUpcommingCategory.push((upcommingAttendance[i]/upcommingCapacity[i])*100)
     }
 
 
