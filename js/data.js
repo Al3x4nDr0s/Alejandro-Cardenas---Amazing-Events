@@ -1,3 +1,19 @@
+// const amazingUrl = "https://mindhub-xj03.onrender.com/api/amazing"; 
+
+// const respuesta = async() => {
+//   try {
+//     const response = await fetch(amazingUrl);
+//     console.log(response);
+//     const data = await response.json();
+//     console.log(data);
+//     return data;
+    
+//   } catch (error) {
+//       console.log('Hubo un problema con la solicitud:', error.message);
+//   };
+// };
+
+
 const jsonData = {
     "currentDate": "2022-01-01",
     "events": [

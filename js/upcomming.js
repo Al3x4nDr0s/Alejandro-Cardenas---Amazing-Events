@@ -1,12 +1,26 @@
-let actualDate = new Date(jsonData.currentDate);
+const amazingUrl = "https://mindhub-xj03.onrender.com/api/amazing"; 
 
-const upcomming = jsonData.events.filter(element => {
-    if (new Date(element.date) >= actualDate) {
-        return element.date;
-    };
-});
+const upcommingEvents = async() => {
+  try {
+    const response = await fetch(amazingUrl);
+    const data = await response.json();
 
-categories(jsonData.events);
-renderCard(upcomming);
-searchBar(upcomming);
-filterAll(upcomming);
+    let actualDate = new Date(data.currentDate);
+
+    const upcomming = data.events.filter(element => {
+        if (new Date(element.date) >= actualDate) {
+            return element.date;
+        };
+    });
+
+    categories(data.events);
+    renderCard(upcomming);
+    searchBar(upcomming);
+    filterAll(upcomming);
+    
+  } catch (error) {
+      console.log('Hubo un problema con la solicitud:', error.message);
+  };
+};
+
+upcommingEvents();

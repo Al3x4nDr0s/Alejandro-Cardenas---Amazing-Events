@@ -1,6 +1,18 @@
-const data = jsonData.events;
+const amazingUrl = "https://mindhub-xj03.onrender.com/api/amazing"; 
 
-categories(data);
-renderCard(data);
-searchBar(data);
-filterAll(data);
+const respuesta = async() => {
+  try {
+    const response = await fetch(amazingUrl);
+    const data = await response.json();
+
+    categories(data.events);
+    renderCard(data.events);
+    searchBar(data.events);
+    filterAll(data.events);
+    
+  } catch (error) {
+      console.log('Hubo un problema con la solicitud:', error.message);
+  };
+};
+
+respuesta()
