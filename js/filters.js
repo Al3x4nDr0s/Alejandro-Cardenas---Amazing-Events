@@ -12,6 +12,17 @@ const searchBar = (data) => {
 const searchResponse = (search, data) => {
     if (search.value === '') return data;
     let response = data.filter(e => e.name.toLowerCase().includes(search.toLowerCase().trim()));
+    // if(response.length == 0 ) {
+    //     console.log("no existe")
+    //     const popup = document.getElementById("popup");
+    //     console.log(popup)
+    //     const btnCerrar = document.getElementById('btn-cerrar');
+    //     console.log(btnCerrar)
+    //     popup.classList.remove('oculto');
+    //     btnCerrar.addEventListener('click', () => {
+    //     popup.classList.add('oculto');
+    //        });
+    // };
     return renderCard(response);
 };
 
@@ -34,28 +45,21 @@ const responseChecks = (select, dataCategory) => {
 
 
 const filterAll = (data) => {
-    const filterAllCards = searchBar(data, checkBoxFilter(data));
+    // const filterAllCards = searchBar(data, checkBoxFilter(data));
+    const filterAllCards = checkBoxFilter(data, searchBar(data));
 };
 
 /*--------------------- Alert ---------------------*/
 
 const alert = () => {
 
-    const modalTemplate = `<div class="modal" tabindex="-1">
-                                <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                    <h5 class="modal-title">Evento no encontrado</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                    <p>El evento que está buscando no se encuentra disponible. Verifique que este bien escrito y trate de nuevo.</p>
-                                    </div>
-                                    <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    </div>
-                                </div>
-                                </div>
+    const modal = document.getElementById('container');
+
+    const modalTemplate = `<div id="popup" class="oculto">
+                                <p>Este es el contenido del popup</p>
+                                <button id="btn-cerrar">Cerrar</button>
                             </div>`
+
+    modal.innerHTML = modalTemplate;                        0
 
 };

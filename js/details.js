@@ -3,16 +3,12 @@ const amazingdetailUrl = "https://mindhub-xj03.onrender.com/api/amazing";
 async function dataEventsPrueba() {
     try {
         const response = await fetch(amazingdetailUrl);
-        console.log(response)
         const data = await response.json();
-        console.log(data)
         const dataEvents = data.events;
-        console.log(dataEvents)
 
         let id = new URLSearchParams(location.search).get("id");
         const cardDetail = dataEvents.find(elemento => elemento._id == id);
-        console.log(cardDetail)
-         const card = document.getElementById('containerDetail');
+        const card = document.getElementById('containerDetail');
 
         let detailTemplate =`<div class="card" style="width: 40rem;">
                                 <img src='${cardDetail.image}' class="card-img-top" alt="...">
