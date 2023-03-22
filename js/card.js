@@ -1,7 +1,6 @@
 
 const renderCard = (data) => {
     const card = document.getElementById('container');
-
     const cardTemplate = data.map(element => {
 
       return `</div class="flex-grow-1">

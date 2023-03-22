@@ -16,7 +16,7 @@ const upcommingEvents = async() => {
     categories(data.events);
     renderCard(upcomming);
     searchBar(upcomming);
-    filterAll(upcomming);
+    checkBoxFilter(upcomming)
     
   } catch (error) {
       console.log('Hubo un problema con la solicitud:', error.message);

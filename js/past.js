@@ -16,7 +16,7 @@ const pastEvents = async() => {
     categories(data.events);
     renderCard(past);
     searchBar(past);
-    filterAll(past);
+    checkBoxFilter(past)
     
   } catch (error) {
       console.log('Hubo un problema con la solicitud:', error.message);

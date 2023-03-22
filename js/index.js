@@ -8,7 +8,7 @@ const respuesta = async() => {
     categories(data.events);
     renderCard(data.events);
     searchBar(data.events);
-    filterAll(data.events);
+    checkBoxFilter(data.events)
     
   } catch (error) {
       console.log('Hubo un problema con la solicitud:', error.message);
